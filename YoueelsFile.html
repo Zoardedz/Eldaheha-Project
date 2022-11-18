@@ -4,27 +4,47 @@
 <head>
     <meta charset="UTF8" />
     <meta name="description" content=" هنا هتلاقي كل المذكرات والمراجعات والشروحات للمرحلة الإعدادية لغات وعربي" />
-    <title>student community</title>
+    <title>Student's Community</title>
     <link rel="stylesheet" href="MohamedsFile.css">
     <script src="ZiadsFile.js" ></script>
 </head>
 
 <body>
-    <h1 class="h-one">student community</h1>
+    <h1 class="h-one">Student's Community</h1>
     <div class="container">
         <div class="list">
             <nav>
-                <button class="click">اختر المرحلة الدراسية</button>
+                <button id="show" class="click">اختر المرحلة الدراسية</button>
             </nav>
-            <a href="external pages/الصف الأول الإعدادي.html">
-                <button class="pages" onmouseover="make_big(this);" onmouseout="make_small(this);">الصف الأول الإعدادي</button>
-            </a>
-            <a href="external pages/الصف الثاني الإعدادي.html">
-                <button class="pages" onmouseover="make_big(this);" onmouseout="make_small(this);">الصف الثاني الإعدادي</button>
-            </a>
-            <a href="external pages/الصف الثالث الإعدادي.html">
-                <button class="pages" onmouseover="make_big(this);" onmouseout="make_small(this);">الصف الثالث الإعدادي</button>
-            </a>
+			<form id="theGrades">
+				<a href="external pages/الصف الأول الإعدادي.html">
+					<button class="pages" onmouseover="make_big(this);" onmouseout="make_small(this);">الصف الأول الإعدادي</button>
+				</a>
+				<a href="external pages/الصف الثاني الإعدادي.html">
+					<button class="pages" onmouseover="make_big(this);" onmouseout="make_small(this);">الصف الثاني الإعدادي</button>
+				</a>
+				<a href="external pages/الصف الثالث الإعدادي.html">
+					<button class="pages" onmouseover="make_big(this);" onmouseout="make_small(this);">الصف الثالث الإعدادي</button>
+				</a>
+				<script>
+					const btn = document.getElementById('show');
+					btn.addEventListener('click', () => {
+						  const form = document.getElementById('theGrades');
+
+						  if (form.style.display == 'none') {
+							//this shows the buttons
+							form.style.display = 'block';
+						  } else if (form.style.display =='block') {
+							//this hides the buttons
+							form.style.display = 'none';
+						}
+					});
+				</script>
+			</form>
+			<script>
+				const form = document.getElementById('theGrades');
+				form.style.display = 'none';
+			</script>
             <!-- انت اللي هتعمل الديزاين يا محمد -->
             <!--  اوك يا يوئيل-->
         </div>
