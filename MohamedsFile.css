@@ -1,1 +1,38 @@
 /* Testing uploading to GITHUB*/
+
+
+.list{
+    margin: 25% 0px 0px 0px;
+}
+.h-one {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.click {
+    background-color: skyblue;
+    align-content: center;
+    border: 3px solid rgb(0, 0, 0);
+    width: 200px;
+    height: 100px;
+    margin: 20px 40% 20px 40% ;
+}
+
+.pages {
+    display: inline-block;
+    background-color: #eee;
+    height: 60px;
+    text-align: center;
+    margin-right: 20px;
+    width: calc(33.3333% - 33px);
+}
+.pages{
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    border: 5px solid black;
+
+}
+.big{
+    font-size: 18px;
+}
